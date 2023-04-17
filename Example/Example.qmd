@@ -1,0 +1,114 @@
+---
+title: 'Theme Showcase'
+format: 
+  revealjs:
+    logo: baylor.png
+    theme: [../_extensions/baylor/baylor-theme.scss]
+    footer: 'Nathen Byford'
+    slide-number: true
+    auto-animate: true
+    chalkboard: false
+    preview-links: false
+    multiplex: false
+    scrollable: true
+execute: 
+  echo: true
+  cache: false
+knitr:
+  opts_chunk: 
+    fig-format: svg
+    collapse: true
+---
+
+
+```{r setup_environment}
+#| message: false
+#| include: false
+library("tidyverse"); library("patchwork"); library("plotly")
+theme_set(theme_minimal())
+theme_update(panel.grid.minor = element_blank(),
+             axis.line = element_line(),
+             axis.ticks = element_line())
+```
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+# Code
+
+## Basic code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+## Advanced code
+:::: {.columns}
+::: {.column width="36%"}
+We can put some code on this side...
+```{.r code-line-numbers="|1,2|4,5"}
+rand <- rnorm(100)
+summary(rand)
+
+gam <- rgamma(100, shape = 1)
+summary(gam)
+```
+:::
+
+::: {.column width="58%"}
+And put the results of the code over here or something.
+```{r}
+#| echo: false
+rand <- rnorm(100)
+gam <- rgamma(100, shape = 1)
+```
+
+```{r}
+summary(rand)
+summary(gam)
+```
+
+:::
+::::
+## Math
+The basic linear model is defined as
+$$ 
+Y_i = X_0 + X_i \beta_i + \varepsilon
+$$
+
+## simple plots
+
+Here we can include a plot with the code hidden.
+
+```{r}
+#| code-fold: true
+#| code-summary: Plot Code
+
+mpg %>% 
+  ggplot(aes(x = displ, y = hwy)) +
+  geom_point(aes(color = class), size = 2) 
+```
+
+## Interactive plots
+
+```{r}
+#| code-fold: true
+#| code-summary: Plot Code
+
+p <- mpg %>% 
+  ggplot(aes(x = displ, y = hwy)) +
+  geom_point(aes(color = class)) 
+
+ggplotly(p)
+```
+
