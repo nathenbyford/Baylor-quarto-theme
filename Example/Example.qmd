@@ -52,16 +52,15 @@ When you click the **Render** button a presentation will be generated that inclu
 1 + 1
 ```
 
-## Advanced code
+## Code and Columns
 :::: {.columns}
 ::: {.column width="36%"}
 We can put some code on this side...
-```{.r code-line-numbers="|1,2|4,5"}
-rand <- rnorm(100)
-summary(rand)
+```{.r code-line-numbers="|1,2|4"}
+mod <- mtcars %>%
+  lm(displ ~ 1) 
 
-gam <- rgamma(100, shape = 1)
-summary(gam)
+summary(mod)
 ```
 :::
 
@@ -69,21 +68,21 @@ summary(gam)
 And put the results of the code over here or something.
 ```{r}
 #| echo: false
-rand <- rnorm(100)
-gam <- rgamma(100, shape = 1)
+mod <- mtcars %>%
+  lm(hp ~ 1, data = .) 
+
 ```
 
 ```{r}
-summary(rand)
-summary(gam)
+summary(mod)
 ```
 
 :::
 ::::
 ## Math
-The basic linear model is defined as
+Math looks like this
 $$ 
-Y_i = X_0 + X_i \beta_i + \varepsilon
+\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i
 $$
 
 ## simple plots
