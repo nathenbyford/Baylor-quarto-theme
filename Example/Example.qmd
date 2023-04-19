@@ -59,7 +59,7 @@ We can put some code on this side...
 ```{.r code-line-numbers="|1,2|4"}
 mod <- mtcars %>%
   lm(displ ~ 1) 
-
+  
 summary(mod)
 ```
 :::
@@ -85,7 +85,7 @@ $$
 \bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i
 $$
 
-## simple plots
+## Simple plots
 
 Here we can include a plot with the code hidden.
 
