@@ -20,39 +20,38 @@ $presentation-line-height: 1.5em;
 $presentation-heading-font-weight: 400;
 
 // colors
-$body-bg: #fafafa !default;
+$body-bg: #fefefe !default;
 $body-color: #000 !default;
 $selection-bg: #134e13;
 
-// headings
-// $presentation-heading-font: "Palatino Linotype", "Book Antiqua", Palatino,
-//   FreeSerif, serif !default;
-// $presentation-heading-color: #134e13 !default;
 
 /*-- scss:rules --*/
 
 .reveal a {
 	line-height: 1.5em;
-	color: #eb811b;
+	color: #FFB81C;
 	font-weight: 300;
 }
 
 .reveal .footer a {
-	color: #eb811b !important;
+	color: #FFB81C !important;
 }
 
 .reveal p {
 	font-weight: 300;
 }
 
+// Lists
 .reveal .slide ul li,
 .reveal .slide ol li {
+  list-style-type: square;
+  color: #154734;
 	font-weight: 300;
 }
 
-// maximum height of code blocks before scrolling is used
+// Maximum height of code blocks
 .reveal pre.sourceCode code {
-	max-height: 700px; // default 500
+	max-height: 600px; // default 500
 }
 
 
@@ -62,8 +61,8 @@ h1::after {
 	content: "";
 	display: block;
 	border: none;
-	background-color: #eb811b;
-	color: #eb811b;
+	background-color: #FFB81C;
+	color: #FFB81C;
 	height: 1px;
 	margin: 1em 10px 0 10px;
 }
@@ -147,6 +146,7 @@ iframe {
 .center {
 	text-align: center;
 }
+
 
 //
 .reveal .slide-menu-button .fa-bars::before {
