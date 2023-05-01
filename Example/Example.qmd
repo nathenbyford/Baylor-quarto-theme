@@ -54,7 +54,7 @@ When you click the **Render** button a presentation will be generated that inclu
 
 ## Code and Columns
 :::: {.columns}
-::: {.column width="36%"}
+::: {.column width="39%"}
 We can put some code on this side...
 ```{.r code-line-numbers="|1,2|4"}
 mod <- mtcars %>%
@@ -64,7 +64,7 @@ summary(mod)
 ```
 :::
 
-::: {.column width="58%"}
+::: {.column width="59%"}
 And put the results of the code over here or something.
 ```{r}
 #| echo: false

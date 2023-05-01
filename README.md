@@ -21,17 +21,21 @@ This theme is heavily influenced by the [metropolis](https://github.com/pat-s/xa
 
 ## Usage notes
 
-### is not currently working.
-I'm working on making the template easily downloadable, for right not it is easiest to clone this repo and use the template as your presentation.
-- To use the template in for a new document use the following code in the terminal.
-```
+### Note:
+
+I'm working on making the template easily downloadable, for right now it is easiest to clone this repo and use the template as your presentation. Then get rid of all the extra files not needed.
+
+-    To use the template in for a new document use the following code in the terminal.
+
+```         
 quarto use template nathenbyford/baylor-quarto-theme
 ```
-- To use the template on a preexisting quarto document and just add the theme you can use the following code in the terminal
-```
+
+-   To use the template on a preexisting quarto document and just add the theme you can use the following code in the terminal
+
+```         
 quarto add nathenbyford/baylor-quarto-theme
 ```
 
-- When using columns, the overall width of the combined columns need to add up to 94% othewise they won't fit side by side. A similar issue can be found in [quarto-metropolis](https://codeberg.org/pat-s/quarto-metropolis). 
-    - This issue could be solved if the grey background is removed from the columns.
-
+-   When using columns, the overall width of the combined columns need to add up to 98% otherwise they won't fit side by side. A similar issue can be found in [quarto-metropolis](https://codeberg.org/pat-s/quarto-metropolis).
+    -   This issue could be solved if the grey background is removed from the columns.

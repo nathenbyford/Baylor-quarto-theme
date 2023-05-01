@@ -29,7 +29,7 @@ $selection-bg: #134e13;
 
 .reveal a {
 	line-height: 1.5em;
-	color: #FFB81C;
+	color: #134e13;
 	font-weight: 300;
 }
 
@@ -120,9 +120,9 @@ h2::after.title {
 .column {
 	// #column;
 	// border: 2px solid red;
-	border-radius: 10px !important;
-	padding: 10px;
-	margin: 5px;
+	border-radius: 5px !important;
+	padding: 3px;
+	margin: 2px;
 	background-color: #eeeeee;
 }
 
