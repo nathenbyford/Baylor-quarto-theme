@@ -54,7 +54,7 @@ When you click the **Render** button a presentation will be generated that inclu
 
 ## Code and Columns
 :::: {.columns}
-::: {.column width="39%"}
+::: {.column width="40%"}
 We can put some code on this side...
 ```{.r code-line-numbers="|1,2|4"}
 mod <- mtcars %>%
@@ -64,7 +64,7 @@ summary(mod)
 ```
 :::
 
-::: {.column width="59%"}
+::: {.column width="60%"}
 And put the results of the code over here or something.
 ```{r}
 #| echo: false
@@ -80,10 +80,15 @@ summary(mod)
 :::
 ::::
 ## Math
-Math looks like this
-$$ 
-\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i
-$$
+Math looks like this:
+
+\begin{align*}
+  y &= X  \beta + \varepsilon \\
+  y &\in \mathbb{R}^n \quad \beta \in \mathbb{R}^p \quad X \in \mathbb{R}^{n \times p} \\
+  \varepsilon &\sim N_{n}(0_{n}, \sigma^2 I_{n}) \\
+  y_i &= \beta_0 + \sum_{i=1}^{p}\beta_i X_i + \varepsilon_i \\
+  y_1 &= \beta_0 + \beta_1 X_i + \varepsilon_1
+\end{align*}
 
 ## Simple plots
 

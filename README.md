@@ -7,7 +7,6 @@ This theme is heavily influenced by the [metropolis](https://github.com/pat-s/xa
 -   Baylor green headings,
 -   Baylor logo,
 -   Baylor green square bullet points,
--   Gray column backgrounds,
 -   Roboto font default, and
 -   Jetbrains mono font (no ligatures) for code blocks.
 
@@ -17,7 +16,7 @@ This theme is heavily influenced by the [metropolis](https://github.com/pat-s/xa
 
 ![](Example/Pictures/List.png)
 
-![](Example/Pictures/Columns%20and%20code.png)
+![](Example/Pictures/math.png)
 
 ## Usage notes
 
@@ -25,7 +24,7 @@ This theme is heavily influenced by the [metropolis](https://github.com/pat-s/xa
 
 I'm working on making the template easily downloadable, for right now it is easiest to clone this repo and use the template as your presentation. Then get rid of all the extra files not needed.
 
--    To use the template in for a new document use the following code in the terminal.
+-   To use the template in for a new document use the following code in the terminal.
 
 ```         
 quarto use template nathenbyford/baylor-quarto-theme
@@ -36,6 +35,3 @@ quarto use template nathenbyford/baylor-quarto-theme
 ```         
 quarto add nathenbyford/baylor-quarto-theme
 ```
-
--   When using columns, the overall width of the combined columns need to add up to 98% otherwise they won't fit side by side. A similar issue can be found in [quarto-metropolis](https://codeberg.org/pat-s/quarto-metropolis).
-    -   This issue could be solved if the grey background is removed from the columns.
