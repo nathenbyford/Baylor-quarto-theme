@@ -4,7 +4,7 @@ date: ''
 format: 
   revealjs:
     logo: baylor.png
-    theme: [/_extensions/baylor/baylor-theme.scss]
+    theme: [../_extensions/baylor-theme.scss]
     footer: 'Author'
     slide-number: true
     auto-animate: true

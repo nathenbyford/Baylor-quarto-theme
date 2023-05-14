@@ -3,7 +3,7 @@ title: 'Theme Showcase'
 format: 
   revealjs:
     logo: baylor.png
-    theme: [../_extensions/baylor/baylor-theme.scss]
+    theme: [../_extensions/baylor-theme.scss]
     footer: 'Nathen Byford'
     slide-number: true
     auto-animate: true
