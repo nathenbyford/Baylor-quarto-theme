@@ -1,5 +1,6 @@
 ---
 title: 'Theme Showcase'
+author: 'Nathen Byford'
 format: 
   revealjs:
     logo: baylor.png

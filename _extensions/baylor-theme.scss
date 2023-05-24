@@ -27,6 +27,31 @@ $selection-bg: #134e13;
 
 /*-- scss:rules --*/
 
+#title-slide{
+  text-align: left;
+}
+
+.quarto-title-authors {
+    display: flex;
+    justify-content: left;
+  
+    .quarto-title-author {
+      padding-left: 0em;
+      padding-right: 0em;
+      width: 100%;
+    }
+}
+  
+.quarto-title-author::before{
+  content: "";
+  display: block;
+	border: none;
+	background-color: #000;
+	color: #000;
+	height: 1px;
+	margin: 0 0 10px 0;
+}
+
 .reveal a {
 	line-height: 1.5em;
 	color: #134e13;
