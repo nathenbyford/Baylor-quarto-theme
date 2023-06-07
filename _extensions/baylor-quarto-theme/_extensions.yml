@@ -2,7 +2,7 @@ title: "Baylor Presentation Template"
 format: 
   revealjs:
     logo: baylor.png
-    theme: [simple, baylor-theme.scss]
+    theme: baylor-theme.scss
     author: Nathen Byford
     slide-number: true
     auto-animate: true

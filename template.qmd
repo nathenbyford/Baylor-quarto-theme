@@ -3,22 +3,7 @@ title: 'Title'
 date: ''
 format: 
   revealjs:
-    logo: ../_extentions/baylor-quarto-theme/baylor.png
-    theme: [../_extensions/baylor-quarto-theme/baylor-theme.scss]
     footer: 'Author'
-    slide-number: true
-    auto-animate: true
-    chalkboard: false
-    preview-links: false
-    multiplex: false
-    scrollable: true
-execute: 
-  echo: true
-  cache: false
-knitr:
-  opts_chunk: 
-    fig-format: svg
-    collapse: true
 ---
 
 ## Quarto
