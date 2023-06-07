@@ -1,5 +1,4 @@
 # Quarto will ignore most github files already, but not all. 
 # This will exclude them when using the teplate.
 
-*.Rproj
 *.png
