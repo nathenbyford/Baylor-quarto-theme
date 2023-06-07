@@ -3,8 +3,8 @@ title: 'Title'
 date: ''
 format: 
   revealjs:
-    logo: baylor.png
-    theme: [../_extensions/baylor-theme.scss]
+    logo: ../_extentions/baylor-quarto-theme/baylor.png
+    theme: [../_extensions/baylor-quarto-theme/baylor-theme.scss]
     footer: 'Author'
     slide-number: true
     auto-animate: true

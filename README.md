@@ -12,11 +12,11 @@ This theme is heavily influenced by the [metropolis](https://github.com/pat-s/xa
 
 ## Photos
 
-![](Example/Pictures/Title.png)
+![](Title.png)
 
-![](Example/Pictures/List.png)
+![](List.png)
 
-![](Example/Pictures/math.png)
+![](math.png)
 
 ## Usage notes
 
